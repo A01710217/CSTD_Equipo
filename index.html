@@ -1,36 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Gon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./CSS/styles.css"/>
+    <title>CritiCraft</title>
 </head>
 <body>
-    <header>
-        <section>
-            <h1>Equipo</h1>
-            <h3>Laboratorio 7</h3>
-        </section>
-    </header>
-    <section>
-        <h2>Rama creada: Axel Camacho Villafuerte</h2>
-    </section>
-<<<<<<< HEAD
-    <header>
-        <div>
-            <h1>Laboratorio 7</h1>
+    <div class="columns p-0">
+        <div class="column is-2 p-0">
+            <aside class="menu">
+                <figure class="image">
+                    <img src="./images/logo_criticraft.png">
+                </figure>
+                <ul class="menu-list">
+                    <li>
+                        <a href="./index.html">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-home fa-lg"></i>
+                                </span>
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/grafica_icon.png" alt="Analytics">
+                                    </i>
+                                </span>
+                                Analítico
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/resenia_icon.png" alt="Review">
+                                    </i>
+                                </span>
+                                Reseña
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./configurar_email.html">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/configurar_email_icon.png" alt="Review">
+                                    </i>
+                                </span>
+                                Configurar email
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/usuarios_icon.png" alt="Lista de usuarios">
+                                    </i>
+                                </span>
+                                Usuarios
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/dar_de_alta_usuarios_icon.png" alt="Dar de alta usuarios">
+                                    </i>
+                                </span>
+                                Dar de alta a usuarios
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/roles_icon.png" alt="Roles">
+                                    </i>
+                                </span>
+                                Roles
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/logout_icon.png" alt="Log out">
+                                    </i>
+                                </span>
+                                Log out
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
         </div>
-    </header>
-    <p>
-        <img src="rickroll-roll.gif" sizes="25%">
-    </p>
 
-    <main>
-        <section>
-            <h3>Hola Mundo!</h3>
-        </section>
-    </main>
-=======
-    <h2> soy gay </h2>
-    <p> atentamente: anonimo porfa </p>
->>>>>>> Gonzalo_lab7
+        <div class="column m-0">
+            <header>
+                <div class="box box-header">
+                    <h3 class="title is-3">Hola Admin</h3>
+                    <div class="has-text-left usuario-icon">
+                        <figure class="image-User is-48x48">
+                            <img src="./images/usuario_icon.png">
+                        </figure>
+                        <span class="subtitle is-5">ADMIN</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Vista Home -->
+            <main>
+                <!-- Recuadro Analiticos -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                              <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                              </p>
+                            </figure>
+                            <div class="media-content">
+                              <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                  <u><strong class="title is-3"><a>Analítico</a></strong></u>
+                                  <br>
+                                  <p class="title is-5">Hecha un vistazo, a las gráficas que en tiempo real, para obtener una mejor perspectiva de las ventas.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a analítico
+                                </button>
+                              </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Reseña -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Reseña</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Contempla todas las reseñas hechas por los compradores.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a reseña
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Configurar e-mail -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Configurar e-mail</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Revisa todas las plantillas que se tiene para las diferentes marcas, además, agrega preguntas de satisfacción.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a configurar e-mail
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Usuarios -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Usuarios</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Revisa todas los usuarios que se encuentran activos dentro del sistema, tanto personal de administración, CRM como analíticos.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a usuarios
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Dar de alta a usuarios -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Dar de alta a usuarios</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Registra un nuevo usuario en el sistema, define el rol y asigna los roles correspondientes.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a dar de alta a usuarios
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Roles -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Roles</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Seleccionar rol para modificar los privilegios de los roles.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a roles
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </main>
+            
+
+        </div>
+    </div>
 </body>
 </html>

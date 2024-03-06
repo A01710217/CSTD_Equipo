@@ -1,0 +1,94 @@
+body {
+    background-color: #F1F2F2;
+}
+
+.text-wh {
+    color: #fff;
+}
+
+aside {
+    background-color: #61366E;
+    height: 100%;
+}
+
+figure {
+    margin: auto;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 12px;
+}
+
+.image-User {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-bottom: auto;
+}
+
+.box-header {
+    background-color: #fff;
+    margin-left: -12px;
+    height: 10vh;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.usuario-icon {
+    display: flex;
+    justify-content: space-between;
+    /*La imagen no esta adecuada*/
+}
+
+.home_container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 20px 20px;
+}
+
+.text-home {
+    padding: 0px 50px 0px 0px;
+}
+  
+.boton-derecho {
+    margin-top: 40px;
+    margin-left: auto; /*Mueve el botón a la derecha*/
+    height: 50px;
+    width: 150px;
+    background-color: #C7A0CE;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.boton-derecho:hover {
+    background-color: #c17bcf;
+}
+
+/* Estilos para HTML Configurar Email*/
+.buton-marca {
+    height: 50px;
+    width: 400px;
+    margin: 50px 50px 50px 50px;
+    background-color: #002355;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buton-marca:hover {
+    background-color: #003f7f;
+}
