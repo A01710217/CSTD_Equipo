@@ -2,6 +2,10 @@ body {
     background-color: #F1F2F2;
 }
 
+a.menu-highlight:hover{
+    background-color: #402348
+}
+
 .text-wh {
     color: #fff;
 }
