@@ -17,7 +17,7 @@
                 </figure>
                 <ul class="menu-list">
                     <li>
-                        <a href="./index.html">
+                        <a href="./index.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
                                     <i class="fas fa-home fa-lg"></i>
@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="analitico.html">
+                        <a class="menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="resenia.html">
+                        <a class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
@@ -51,7 +51,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./configurar_email.html">
+                        <a href="./configurar_email.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./usuarios.html">
+                        <a href="./usuarios.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
@@ -75,7 +75,7 @@
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="./dar_de_alta_usuarios.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="./roles.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
@@ -98,9 +98,9 @@
                             </span>
                         </a>
                     </li>
-                    <li>
-                        <a>
-                            <span class="icon-text ml-3 text-wh">
+                    <li class="logout">
+                        <a class = "menu-highlight">
+                            <span class="icon-text ml-3 text-wh ">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
                                         <img src="./images/logout_icon.png" alt="Log out">
@@ -117,7 +117,7 @@
         <div class="column m-0">
             <header>
                 <div class="box box-header">
-                    <h3 class="title is-3 title is-5">Crear encuesta</h3>
+                    <h3 class="title is-3">Hola Admin</h3>
                     <div class="has-text-left usuario-icon">
                         <figure class="image-User is-48x48">
                             <img src="./images/usuario_icon.png">
@@ -127,71 +127,150 @@
                 </div>
             </header>
 
-
             <!-- Vista Home -->
-            <main class="preguntas-main title is-5">
-                <div class="preguntas-main__block">Nombre de la marca</div>
-                <div class="columns is-gapless">
-                    <div class="column columna is-6">
-                      <p>Pregunta</p>
-                      <form action="">
-                        <label for="tipo">Tipo</label>
-                        <select name="languages" id="tipo">
-                          <option value="opcionMultiple">Opcion Multiple</option>
-                          <option value="php">Checkbox</option>
-                          <option value="java">Pregunta de texto</option>
-                        </select><br>
-                        <input class="preguntas-main__block" type="text">
-                        <label for="tipo">Botones</label>
-                        <input type="button">
-                        <input class="preguntas-main__block" type="text">
-                        <label for="tipo">Opcional</label>
-                        <button class="preguntas-main__button">
-                            <img class="preguntas-main__button" src="./images/boton.png" alt="Texto alternativo">
-                        </button>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                          </label>
-                        <button class="button">Guardar</button>
-                      </form>
-                    </div>
-
-                    <div class="colum columna barra-separacion">
-                    </div>
-
-                    <div class="column columna preguntas-main__preguntas  title is-4">
-                      <p>Formulario</p>
-                      <section>
-                        <div class="preguntas-main__preguntas  title is-5">
-                            <p>1.XXXXXXXXXXXXXXXXXXXXXXX</p>
-                            <div class="mt-3">
-                            <input class="preguntas-main__text-input" type="text" name="">
+            <main>
+                <!-- Recuadro Analiticos -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                              <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                              </p>
+                            </figure>
+                            <div class="media-content">
+                              <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                  <u><strong class="title is-3"><a>Analítico</a></strong></u>
+                                  <br>
+                                  <p class="title is-5">Hecha un vistazo, a las gráficas que en tiempo real, para obtener una mejor perspectiva de las ventas.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a analítico
+                                </button>
+                              </div>
                             </div>
-                        </div>
-                        <div class="preguntas-main__preguntas  title is-5">
-                            <p>2.XXXXXXXXXXXXXXXXXXXXXXX</p>
-                        <div class="mt-3">
-                            <input type="radio" value="HTML">
-                            <label for="html">Opción 1</label><br>
-                            <input type="radio" value="HTML">
-                            <label for="html">Opción 2</label><br>
-                            <input type="radio" value="HTML">
-                            <label for="html">Opción 3</label><br>
-                        </div>
-                        </div>
-                        <div class="preguntas-main__preguntas title is-5">
-                            <p>3.XXXXXXXXXXXXXXXXXXXXXXX</p>
-                        <div class="mt-3">
-                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                            <label for="vehicle1">Opción 1</label><br>
-                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                            <label for="vehicle2">Opción 2</label><br>
-                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                            <label for="vehicle3">Opción 3</label>
-                        </div>
-                        </div>
-                      </section>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Reseña -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Reseña</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Contempla todas las reseñas hechas por los compradores.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a reseña
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Configurar e-mail -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Configurar e-mail</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Revisa todas las plantillas que se tiene para las diferentes marcas, además, agrega preguntas de satisfacción.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a configurar e-mail
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Usuarios -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Usuarios</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Revisa todas los usuarios que se encuentran activos dentro del sistema, tanto personal de administración, CRM como analíticos.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a usuarios
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Dar de alta a usuarios -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Dar de alta a usuarios</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Registra un nuevo usuario en el sistema, define el rol y asigna los roles correspondientes.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a dar de alta a usuarios
+                                </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Recuadro Roles -->
+                <div class="container is-max-widescreen">
+                    <div class="box mt-6">
+                        <article class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content home_container">
+                                <div class="title is-5 text-home">
+                                    <u><strong class="title is-3"><a>Roles</a></strong></u>
+                                    <br>
+                                    <p class="title is-5">Seleccionar rol para modificar los privilegios de los roles.</p>
+                                </div>
+                                <button class="boton-derecho" type="submit">
+                                    Ir a roles
+                                </button>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </main>
