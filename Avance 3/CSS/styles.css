@@ -39,7 +39,7 @@ figure {
 }
 
 .logout {
-    margin-top: 250px;
+  margin-top: 250px;
 }
 
 .box-header {
@@ -52,7 +52,7 @@ figure {
 }
 
 .container-header {
-    position: fixed; /*Fijar el pie de pagina en la parte inferior*/
+    position: fixed; /*Fijar el nav*/
 }
 
 .usuario-icon {
@@ -223,11 +223,6 @@ figure {
     padding: 0px 0px 20px 20px;
 }
 
-.preguntas-main {
-  color: #95785E;
-}
-
-
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -251,7 +246,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #fff;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -263,17 +258,17 @@ figure {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #3D3A4B;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #D3C0CD;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #D3C0CD;
 }
 
 input:checked + .slider:before {
@@ -291,41 +286,88 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.preguntas-main__preguntas{
-  margin-top: 20px;
-  color: #95785E;
-}
-
-.preguntas-main__button{
-  width: 70px;
-  border: none;
-}
-
-.preguntas-main{
-}
-.preguntas-main__text-input {
-  margin-top: 10px;
-  width: 300px; /* Set the desired width */
-  height: 50px;
-}
-.preguntas-main__block{
-  display: block;
-}
 
 .barra-separacion{
-width: 5px; /* Ajusta el ancho de la barra */
-background-color: black;
-height: 100vh; /* Altura completa de la página */
+  margin-top: 140px;
+  width: 5px; /* Ajusta el ancho de la barra */
+  background-color: black;
+  height: 100vh; /* Altura completa de la página */
 }
 
 .button-brand{
 margin: 50px 0px; 
 }
 
+/*HTML de preguntas*/
+.preguntas-main {
+  color: #95785E;
+}
+
+.nombre-marca {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.pregunta-title {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.pregunta-title-formulario {
+  margin-top: 135px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.select-tipo-pregunta {
+  font-size: 15px;
+  margin-left: 10px;
+  width: 200px;
+  height: 20px;
+}
+
+.preguntas-main__text-input {
+  margin-top: 10px;
+  width: 300px; /* Set the desired width */
+  height: 50px;
+  background-color: #D3C0CD;
+}
+.preguntas-main__block {
+  background-color: #D3C0CD;
+}
+
+.preguntas-main__button {
+  margin-bottom: -20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.boton-preguntas-guardar {
+  font-size: 15px;
+  width: 100px;
+  height: 50px;
+  background-color: #D3C0CD;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-preguntas-guardar:hover {
+  background-color: #402348;
+  color: #fff;
+}
+
+.boton-preguntas-guardar:hover {
+  background-color: #402348;
+  color: #fff;
+}
+
+/*Estilos para HTML Configurar e-mail en marca*/
 .columna-marca{
 margin-top: 50px;
 padding: 0px 30px;
 }
+
 
 .encuestas-respondidas{
 height: 230px;
