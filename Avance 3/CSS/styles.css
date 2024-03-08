@@ -2,6 +2,10 @@ body {
     background-color: #F1F2F2;
 }
 
+a.menu-highlight:hover{
+    background-color: #402348
+}
+
 .text-wh {
     color: #fff;
 }
@@ -379,7 +383,7 @@ margin-top: 50px;
 }
 hr{
 border: 2px solid #000;
-margin-top: 50px;
+margin-top: 1px;
 }
 
 ul li:last-child {
@@ -394,4 +398,46 @@ ul li:last-child {
   margin: 25px;
   margin-left: auto;
   text-align: right;
+}
+
+.data-input{
+  text-align: right;
+  margin: 10px;
+}
+
+.grafica{
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+.analitico-estrellas{
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.analitico-resenas h5{
+  font-size: 25px;
+}
+
+.emoji-estrella{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.clasificacion{
+  text-align: center;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 30px;
+  font-size: 35px;
+}
+
+.producto{
+  background-color: black;
+  color: white;
+}
+.encuestas-contestadas{
+  background-color: #D3C0CD;
+  color: white;
 }
