@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./CSS/styles.css"/>
+    <title>CritiCraft</title>
+</head>
+<body>
+    <div class="columns p-0">
+        <div class="column is-2 p-0">
+            <aside class="menu">
+                <figure class="image">
+                    <img src="./images/logo_criticraft.png">
+                </figure>
+                <ul class="menu-list">
+                    <li>
+                        <a href="./index.html" class = "menu-highlight">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-home fa-lg"></i>
+                                </span>
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-highlight" href="./analitico.html">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/grafica_icon.png" alt="Analytics">
+                                    </i>
+                                </span>
+                                Analítico
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class = "menu-highlight" href="./resenia.html">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/resenia_icon.png" alt="Review">
+                                    </i>
+                                </span>
+                                Reseña
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./configurar_email.html" class = "menu-highlight">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/configurar_email_icon.png" alt="Review">
+                                    </i>
+                                </span>
+                                Configurar email
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./usuarios.html" class = "menu-highlight">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/usuarios_icon.png" alt="Lista de usuarios">
+                                    </i>
+                                </span>
+                                Usuarios
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dar_de_alta_usuarios.html" class = "menu-highlight">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/dar_de_alta_usuarios_icon.png" alt="Dar de alta usuarios">
+                                    </i>
+                                </span>
+                                Dar de alta a usuarios
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./roles.html" class = "menu-highlight">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/roles_icon.png" alt="Roles">
+                                    </i>
+                                </span>
+                                Roles
+                            </span>
+                        </a>
+                    </li>
+                    <li class="logout">
+                        <a class = "menu-highlight">
+                            <span class="icon-text ml-3 text-wh">
+                                <span class="icon mr-2">
+                                    <i class="fas fa-lg">
+                                        <img src="./images/logout_icon.png" alt="Log out">
+                                    </i>
+                                </span>
+                                Log out
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column m-0">
+            <header>
+                <div class="box box-header">
+                    <h3 class="title is-3">Crear encuesta</h3>
+                    <div class="has-text-left usuario-icon">
+                        <figure class="image-User is-48x48">
+                            <img src="./images/usuario_icon.png">
+                        </figure>
+                        <span class="subtitle is-5">ADMIN</span>
+                    </div>
+                </div>
+            </header>
+            
+            <main class="preguntas-main title is-5">
+                <div class="columns">
+                    <div class="column">
+                        <p class="bd-notification is-info nombre-marca">Nombre de la marca</p>
+                        <p class="bd-notification is-info pregunta-title">Pregunta</p>
+                        <div class="mt-6">
+                            <label class="title is-4 preguntas-main">Tipo: </label>
+                            <div class="select select-tipo-pregunta">
+                                <select class="select-tipo-pregunta">
+                                    <option>Opcion Multiple</option>
+                                    <option>Checkbox</option>
+                                    <option>Pregunta de texto</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input preguntas-main__block" type="text" placeholder="Escribe la pregunta...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label class="title is-4 preguntas-main">Opciones: </label> <img src="./images/boton.png" alt="Agregar" class="preguntas-main__button">
+                            <div class="field">
+                                <div class="control">
+                                    <br>
+                                    <input class="input preguntas-main__block" type="text" placeholder="Text input">
+                                </div>
+                            </div>
+                            </label>
+                        </div>
+                        <br><br><br>
+                        <div class="title is-4 mt-6">
+                            <div class="columns is-mobile">
+                                <div class="column">
+                                    <label for="tipo" class="preguntas-main">Opcional</label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="column">
+                                    <button class="boton-preguntas-guardar">Guardar</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="colum columna barra-separacion"></div>
+                    <div class="column">
+                      <p class="bd-notification is-danger pregunta-title-formulario">Formulario</p> <br><br>
+                      <section>
+                        <div class="preguntas-main  title is-5">
+                            <p>1.XXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <div class="mt-3">
+                            <input class="preguntas-main__text-input" type="text" name="">
+                            </div>
+                        </div>
+                        <div class="preguntas-main  title is-5">
+                            <p>2.XXXXXXXXXXXXXXXXXXXXXXX</p>
+                        <div class="mt-3">
+                            <input type="radio" value="HTML">
+                            <label for="html">Opción 1</label><br>
+                            <input type="radio" value="HTML">
+                            <label for="html">Opción 2</label><br>
+                            <input type="radio" value="HTML">
+                            <label for="html">Opción 3</label><br>
+                        </div>
+                        </div>
+                        <div class="preguntas-main title is-5">
+                            <p>3.XXXXXXXXXXXXXXXXXXXXXXX</p>
+                        <div class="mt-3">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Opción 1</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2">Opción 2</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3">Opción 3</label>
+                        </div>
+                        </div>
+                    </section>
+                    </div>
+                  </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
