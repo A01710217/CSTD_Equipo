@@ -1,0 +1,19 @@
+{
+  "name": "criticraft",
+  "version": "1.0.0",
+  "description": "Aplicación de manejo de reseñas para Zebrands",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A01710217/CSTD_Equipo.git"
+  },
+  "contributors": [{"name":"Juan Carlos Calderón García"},{"name": ""}],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A01710217/CSTD_Equipo/issues"
+  },
+  "homepage": "https://github.com/A01710217/CSTD_Equipo#readme"
+}
