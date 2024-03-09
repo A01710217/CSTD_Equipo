@@ -10,10 +10,25 @@
     "type": "git",
     "url": "git+https://github.com/A01710217/CSTD_Equipo.git"
   },
-  "contributors": [{"name":"Juan Carlos Calderón García"},{"name": ""}],
+  "contributors": [
+    {
+      "name": "Juan Carlos Calderón García"
+    },
+    {
+      "name": ""
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/A01710217/CSTD_Equipo/issues"
   },
-  "homepage": "https://github.com/A01710217/CSTD_Equipo#readme"
+  "homepage": "https://github.com/A01710217/CSTD_Equipo#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.2"
+  }
 }
