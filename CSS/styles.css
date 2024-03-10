@@ -3,6 +3,26 @@ body {
     background-color: #F1F2F2;
 }
 
+td, th{
+  vertical-align: middle !important;
+}
+
+.boton-dar-alta-usuario{
+  color: white;
+}
+
+span.icono_preguntas{
+  margin-left: 10vw;
+}
+
+span.icono_preguntas > *:hover {
+  color: black;
+}
+
+i.icono_preguntas{
+  margin-left: 1rem;
+}
+
 a.menu-highlight:hover{
     background-color: #402348
 }
@@ -68,6 +88,9 @@ figure {
     padding: 0px 0px 20px 20px;
 }
 
+.usuarios-container{
+  width: 30%;
+}
 
 .text-home {
     padding: 0px 50px 0px 0px;
@@ -108,6 +131,10 @@ figure {
 /*Estilos para HTML Usuarios*/
 .table-usuarios {
     width: 100%;
+}
+
+.boton-Privilegios{
+    width: 60px;
 }
 
 /*Estilos de boton usuarios*/
@@ -210,10 +237,12 @@ figure {
 
 /*Estilos para HTML Roles - Administrador*/
 .checkbox-privilegios input[type="checkbox"] {
-    width: 50px; /* Ancho personalizado */
-    height: 50px; /* Alto personalizado */
-    margin-right: 50px;
-    cursor: pointer;
+  width: 50px; /* Ancho personalizado */
+  max-width: 50% !important;
+  height: 50px; /* Alto personalizado */
+  cursor: pointer;
+  align-self: top;
+  vertical-align: middle;
 }
 
 .rol_container {
@@ -303,20 +332,25 @@ margin: 50px 0px;
   color: #95785E;
 }
 
-.nombre-marca {
+p.nombre-marca {
   margin-top: 50px;
   font-size: 30px;
 }
+
+input.nombre-marca {
+  color: #95785E;
+  font-size: 30px;
+  width: 10% !important;
+}
+
 
 .pregunta-title {
   margin-top: 50px;
   font-size: 25px;
 }
 
-.pregunta-title-formulario {
-  margin-top: 135px;
+.formulario {
   margin-left: 50px;
-  font-size: 25px;
 }
 
 .select-tipo-pregunta {
@@ -334,6 +368,10 @@ margin: 50px 0px;
 }
 .preguntas-main__block {
   background-color: #D3C0CD;
+}
+
+.preguntas-main__block::placeholder{
+  color: #3c3c3c;
 }
 
 .preguntas-main__button {
@@ -426,17 +464,29 @@ background-color: #ffffff;
 border-radius: 5px;
 margin-top: 50px;
 }
+
 hr{
 border: 2px solid #000;
 margin-top: 1px;
 }
 
-ul li:last-child {
-  margin-top: 500px;
+input, .select{
+  max-width: 95% !important;
+  width: 95% !important;
 }
 
-.checkbox-resenias{
-  margin-top: 60px;
+select{
+  width: 100% !important;
+}
+
+
+.checkbox-resenias input[type="checkbox"] {
+  width: 50px; /* Ancho personalizado */
+  max-width: 5% !important;
+  height: 50px; /* Alto personalizado */
+  cursor: pointer;
+  align-self: top;
+  vertical-align: middle;
 }
 
 .h1-marca{
@@ -485,4 +535,8 @@ ul li:last-child {
 .encuestas-contestadas{
   background-color: #D3C0CD;
   color: white;
+}
+
+.ocultar{
+  visibility: hidden;
 }

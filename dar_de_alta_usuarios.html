@@ -20,7 +20,7 @@
                         <a href="./index.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
-                                    <i class="fas fa-home fa-lg"></i>
+                                    <i class="fa fa-home fa-lg"></i>
                                 </span>
                                 Home
                             </span>
@@ -30,9 +30,7 @@
                         <a class="menu-highlight" href="./analitico.html">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
-                                    <i class="fas fa-lg">
-                                        <img src="./images/grafica_icon.png" alt="Analytics">
-                                    </i>
+                                    <i class="fas fa-chart-bar fa-lg"></i>
                                 </span>
                                 Analítico
                             </span>
@@ -66,8 +64,7 @@
                         <a href="./usuarios.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
-                                    <i class="fas fa-lg">
-                                        <img src="./images/usuarios_icon.png" alt="Lista de usuarios">
+                                    <i class="fas fa-user fa-lg">
                                     </i>
                                 </span>
                                 Usuarios
@@ -78,8 +75,7 @@
                         <a href="./dar_de_alta_usuarios.html" class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
-                                    <i class="fas fa-lg">
-                                        <img src="./images/dar_de_alta_usuarios_icon.png" alt="Dar de alta usuarios">
+                                    <i class="fas fa-user-plus fa-lg">
                                     </i>
                                 </span>
                                 Dar de alta a usuarios
@@ -102,15 +98,12 @@
                         <a class = "menu-highlight">
                             <span class="icon-text ml-3 text-wh">
                                 <span class="icon mr-2">
-                                    <i class="fas fa-lg">
-                                        <img src="./images/logout_icon.png" alt="Log out">
+                                    <i class="fas fa-sign-out-alt fa-lg">
                                     </i>
                                 </span>
                                 Log out
                             </span>
                         </a>
-                    </li>
-                    <li class="">
                     </li>
                 </ul>
             </aside>
@@ -129,68 +122,90 @@
                 </div>
             </header>
             <main>
-                <div class="columns">
-                    <div class="column">
-                        <div class="mt-6">
-                            <label class="title is-4">Rol</label>
-                            <div>
-                                <div class="select">
-                                    <select class="select-rol">
-                                        <option>Administrador</option>
-                                        <option>CRM</option>
-                                        <option>Usuario</option>
-                                    </select>
+                
+                <form>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="mt-6">
+                                <label class="title is-4">Rol</label>
+                                <div>
+                                    <div class="select">
+                                        <select class="select-rol">
+                                            <option>Administrador</option>
+                                            <option>CRM</option>
+                                            <option>Usuario</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mt-6">
-                            <label class="title is-4">Nombre</label>
-                            <div>
-                                <input class="input-usuarios" type="text" placeholder="Nombre">
+                            
+                            <div class="mt-6">
+                                <label class="title is-4">Nombre</label>
+                                <div>
+                                    <input class="input-usuarios" type="text" placeholder="Nombre">
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <label class="title is-4">Correo</label>
+                                <div>
+                                    <input class="input-usuarios" type="email" placeholder="Correo">
+                                </div>
+                            </div>
+
+                            <div class="mt-6 content">
+                                <label class="title is-4"><strong>Lista de privilegios:</strong></label>      
+                                <ul>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="mt-6">
-                            <label class="title is-4">Apellido</label>
-                            <div>
-                                <input class="input-usuarios" type="text" placeholder="Apellido">
+
+                        <div class="column">
+                            <div class="mt-6 ocultar">
+                                <label class="title is-4">Apellido</label>
+                                <div>
+                                    <input class="input-usuarios" type="text" placeholder="Apellido">
+                                </div>
                             </div>
-                        </div>
-                        <div class="mt-6">
-                            <label class="title is-4">Correo</label>
-                            <div>
-                                <input class="input-usuarios" type="email" placeholder="Correo">
+
+                            <div class="mt-6">
+                                <label class="title is-4">Apellido</label>
+                                <div>
+                                    <input class="input-usuarios" type="text" placeholder="Apellido">
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="mt-6 content">
-                            <label class="title is-4"><strong>Lista de privilegios:</strong></label>      
-                            <ul>
-                                <li>
-                                    XXXXXX
-                                </li>
-                                <li>
-                                    XXXXXX
-                                </li>
-                                <li>
-                                    XXXXXX
-                                </li>
-                                <li>
-                                    XXXXXX
-                                </li>
-                                <li>
-                                    XXXXXX
-                                </li>
-                                <li>
-                                    XXXXXX
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="container-boton-dar-alta-usuario">
-                            <button class="is-link boton-dar-alta-usuario">Guardar</button>
-                            <button class="is-link is-light boton-dar-alta-usuario">Cancelar</button>
+                            
+                            <div class="mt-6">
+                                <label class="title is-4">Contraseña</label>
+                                <div>
+                                    <input class="input-usuarios" type="text" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="container-boton-dar-alta-usuario">
+                                <button class="is-link boton-dar-alta-usuario">Guardar</button>
+                                <button class="is-link is-light boton-dar-alta-usuario">Cancelar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </main> 
         </div>
     </div>
