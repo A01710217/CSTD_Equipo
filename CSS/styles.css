@@ -1,48 +1,12 @@
-body {
-    font-family: helvetica-neue, helvetica, sans-serif;
-    background-color: #F1F2F2;
-}
-
-td, th{
-  vertical-align: middle !important;
-}
-
-.boton-dar-alta-usuario{
-  color: white;
-}
-
-span.icono_preguntas{
-  margin-left: 10vw;
-}
-
-span.icono_preguntas > *:hover {
-  color: black;
-}
-
-i.icono_preguntas{
-  margin-left: 1rem;
-}
-
-a.menu-highlight:hover{
-    background-color: #402348
-}
-
-.text-wh {
-    color: #fff;
-}
-
+/*Estilos para el menu*/
 aside {
-    background-color: #61366E;
+    background-color: #61366e;
     height: 120%;
     position: fixed; /*Fijar el pie de pagina en la parte inferior*/
     margin-top: 10px;
 }
 
-figure {
-    margin: auto;
-}
-
-.image {
+.logo {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -50,7 +14,7 @@ figure {
     margin-top: 12px;
 }
 
-.image-User {
+.image_User {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -62,7 +26,7 @@ figure {
   margin-top: 250px;
 }
 
-.box-header {
+.box_header {
     background-color: #fff;
     margin-left: -50px;
     height: 10vh;
@@ -71,16 +35,13 @@ figure {
     justify-content: space-between;
 }
 
-.container-header {
-    position: fixed; /*Fijar el nav*/
-}
-
-.usuario-icon {
+.container_User {
     display: flex;
     justify-content: space-between;
     /*La imagen no esta adecuada*/
 }
 
+/*Estilos para HTML Home*/
 .home_container {
     margin-top: 30px;
     display: flex;
@@ -88,15 +49,11 @@ figure {
     padding: 0px 0px 20px 20px;
 }
 
-.usuarios-container{
-  width: 30%;
-}
-
-.text-home {
+.text_container {
     padding: 0px 50px 0px 0px;
 }
   
-.boton-derecho {
+.boton_derecho {
     margin-top: 40px;
     margin-left: auto; /*Mueve el botón a la derecha*/
     height: 50px;
@@ -108,37 +65,18 @@ figure {
     text-align: center;
 }
 
-.boton-derecho:hover {
+.boton_derecho:hover {
     background-color: #c17bcf;
 }
 
 /* Estilos para HTML Configurar Email*/
-.buton-marca {
-    height: 50px;
-    width: 400px;
-    margin: 50px 50px 50px 50px;
-    background-color: #002355;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-}
-
-.buton-marca:hover {
-    background-color: #003f7f;
+.button_brand{
+  margin: 50px 0px; 
+  background-color: #fff;
 }
 
 /*Estilos para HTML Usuarios*/
-.table-usuarios {
-    width: 100%;
-}
-
-.boton-Privilegios{
-    width: 60px;
-}
-
-/*Estilos de boton usuarios*/
-.boton-modificar {
+.boton_modificar {
     height: 50px;
     width: 100px;
     margin-left: auto;
@@ -148,7 +86,12 @@ figure {
     text-align: center;
 }
 
-.boton-Eliminar {
+.boton_modificar:hover {
+  background-color: #61366E;
+  color: #fff;
+}
+
+.boton_eliminar {
     height: 50px;
     width: 60px;
     background-color: #fff;
@@ -157,62 +100,50 @@ figure {
     text-align: center;
 }
 
-.boton-modificar:hover {
-    background-color: #61366E;
-    color: #fff;
-}
-
-.boton-Eliminar:hover {
+.boton_eliminar:hover {
     background-color: #FF3131;
     color: #fff;
 }
 
 /*Estilos para HTML Dar de alta usuario*/
-/*Estilos contenedor de container-dar-de-alta*/
-.container-dar-de-alta {
-    margin-top: 40px;
-}
-
-.label-dar-alta-usuario {
-    font-size: 20px;
-}
-/*Estilos para selector de rol*/
-.select-rol {
-    width: 1255px;
+.input_usuarios {
     height: 40px;
 }
 
-.input-usuarios {
-    width: 1255px;
-    height: 40px;
+.container_boton_dar_alta_usuario {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 0px 20px 0px;
 }
 
-.container-boton-dar-alta-usuario {
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 0px 20px 0px;
+.boton_dar_alta_usuario {
+  color: white;
+  margin-right: auto;
+  margin-top: 40px;
+  height: 50px;
+  width: 150px;
+  background-color: #61366E;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
 }
 
-.boton-dar-alta-usuario {
-    margin-right: auto;
-    margin-top: 40px;
-    height: 50px;
-    width: 150px;
-    background-color: #61366E;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-}
-
-.boton-dar-alta-usuario:hover {
+.boton_dar_alta_usuario:hover {
     background-color: #402348;
     color: #fff;
 }
 
+.ocultar{
+  visibility: hidden;
+}
+
 /*Estilos para el HTML Roles*/
-/*Estilos para el boton de agregar rol*/
-.boton-roles {
+.boton_privilegios{
+  width: 60px;
+}
+
+.boton_roles {
     margin-top: 100px;
     height: 400px;
     width: 400px;
@@ -223,12 +154,12 @@ figure {
     background-color: #fff;
 }
 
-.boton-roles:hover {
+.boton_roles:hover {
     background-color: #7b7b7b;
     color: #fff;
 }
 
-.image-rol {
+.image_rol {
     margin-top: 100px;
     height: 400px;
     width: 500px;
@@ -238,7 +169,7 @@ figure {
 /*Estilos para HTML Roles - Administrador*/
 .checkbox-privilegios input[type="checkbox"] {
   width: 50px; /* Ancho personalizado */
-  max-width: 50% !important;
+  max-width: 50%;
   height: 50px; /* Alto personalizado */
   cursor: pointer;
   align-self: top;
@@ -252,136 +183,73 @@ figure {
     padding: 0px 0px 20px 20px;
 }
 
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: #3D3A4B;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #D3C0CD;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #D3C0CD;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-
-.barra-separacion{
+/*Estilos para el HTML de preguntas*/
+.barra_separacion{
   margin-top: 140px;
   width: 5px; /* Ajusta el ancho de la barra */
   background-color: black;
   height: 100vh; /* Altura completa de la página */
 }
 
-.button-brand{
-margin: 50px 0px; 
-}
-
-/*HTML de preguntas*/
-.preguntas-main {
+.preguntas_main {
   color: #95785E;
 }
 
-p.nombre-marca {
+p.nombre_marca {
   margin-top: 50px;
   font-size: 30px;
 }
 
-input.nombre-marca {
+input.nombre_marca {
   color: #95785E;
   font-size: 30px;
-  width: 10% !important;
+  width: 10%;
 }
 
-
-.pregunta-title {
+.pregunta_title {
   margin-top: 50px;
   font-size: 25px;
 }
 
 .formulario {
+  margin-top: 50px;
+  font-size: 25px;
   margin-left: 50px;
 }
 
-.select-tipo-pregunta {
+.select_tipo_pregunta {
   font-size: 15px;
   margin-left: 10px;
   width: 200px;
   height: 20px;
 }
 
-.preguntas-main__text-input {
+select.select_tipo_pregunta {
+  background-color: #D3C0CD;
+}
+
+.preguntas_main_text-input {
   margin-top: 10px;
   width: 300px; /* Set the desired width */
   height: 50px;
   background-color: #D3C0CD;
 }
-.preguntas-main__block {
+.preguntas_main_block {
   background-color: #D3C0CD;
 }
 
-.preguntas-main__block::placeholder{
+.preguntas_main_block::placeholder{
   color: #3c3c3c;
 }
 
-.preguntas-main__button {
+.preguntas_main_button {
   margin-bottom: -20px;
   height: 50px;
   width: 50px;
   cursor: pointer;
 }
 
-.boton-preguntas-guardar {
+.boton_preguntas_guardar {
   font-size: 15px;
   width: 100px;
   height: 50px;
@@ -390,132 +258,53 @@ input.nombre-marca {
   cursor: pointer;
 }
 
-.boton-preguntas-guardar:hover {
+.boton_preguntas_guardar:hover {
   background-color: #402348;
   color: #fff;
 }
 
-.boton-preguntas-guardar:hover {
-  background-color: #402348;
-  color: #fff;
+span.icono_preguntas{
+  margin-left: 10vw;
+}
+
+span.icono_preguntas > *{
+  margin-left: 1rem;
+}
+
+span.icono_preguntas > *:hover {
+  color: black;
 }
 
 /*Estilos para HTML Configurar e-mail en marca*/
-.columna-marca{
+.columna_marca{
 margin-top: 50px;
 padding: 0px 30px;
 }
 
-
-.encuestas-respondidas{
-height: 230px;
-background-color: #D3C0CD;
-color: #ffffff;
-text-align: center;
-font-size: 45px;
-}
-
-.por-marca{
-background-color: #B19994;
-height: 230px;
-color: #ffffff;
-text-align: center;
-font-size: 45px;
-}
-
-.por-producto{
-background-color: #937666;
-height: 230px;
-text-align: center;
-color: #ffffff;
-font-size: 45px;
-}
-.promedio-general{
-background-color: #3D3A4B;
-height: 230px;
-text-align: center;
-color: #ffffff;
-font-size: 45px;
-}
-
-.distribucion-estrellas{
-background-color: #ffffff;
-height: 100%;
-font-size: 20px;
-}
-.distribucion-estrellas h4{
-font-size: 40px;
-}
-
-.estrella{
-margin-top: 30px;
-height: 35px;
-}
-.estrellas{
-margin-right: 40px;
-}
-.distribucion{
-margin-top: 10px;
-margin-left: 80px;
-margin-right: 100px; 
-}
+/*Estilos para HTML Analíticos*/
 .grafica{
-background-color: #ffffff;
-border-radius: 5px;
-margin-top: 50px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin: 30px;
+  border-radius: 30px;
 }
 
-hr{
-border: 2px solid #000;
-margin-top: 1px;
-}
-
-input, .select{
-  max-width: 95% !important;
-  width: 95% !important;
-}
-
-select{
-  width: 100% !important;
-}
-
-
-.checkbox-resenias input[type="checkbox"] {
-  width: 50px; /* Ancho personalizado */
-  max-width: 5% !important;
-  height: 50px; /* Alto personalizado */
-  cursor: pointer;
-  align-self: top;
-  vertical-align: middle;
-}
-
-.h1-marca{
-  margin: 25px;
-  margin-left: auto;
-  text-align: right;
-}
-
-.data-input{
+.data_input{
   text-align: right;
   margin: 10px;
 }
 
-.grafica{
-  background-color: #ffffff;
-  border-radius: 30px;
-  margin: 30px;
-}
-
-.analitico-estrellas{
+.analitico_estrellas{
   background-color: #ffffff;
   border-radius: 30px;
 }
 
-.analitico-resenas h5{
+.analitico_resenas h5{
   font-size: 25px;
 }
 
-.emoji-estrella{
+.emoji_estrella{
   font-size: 20px;
   margin-top: 10px;
 }
@@ -532,11 +321,23 @@ select{
   background-color: black;
   color: white;
 }
-.encuestas-contestadas{
+.encuestas_contestadas{
   background-color: #D3C0CD;
   color: white;
 }
 
-.ocultar{
-  visibility: hidden;
+/*Estilos para el HTML de reseñas*/
+.checkbox-resenias input[type="checkbox"] {
+  width: 50px; /* Ancho personalizado */
+  max-width: 5%;
+  height: 50px; /* Alto personalizado */
+  cursor: pointer;
+  align-self: top;
+  vertical-align: middle;
+}
+
+h1.marca{
+  margin: 25px;
+  margin-left: auto;
+  text-align: right;
 }
