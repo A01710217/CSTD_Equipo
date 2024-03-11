@@ -1,0 +1,44 @@
+<%- include('include/Head_admin.ejs')%>
+
+<div class="column m-0">
+    <header>
+        <div class="box box_header">
+            <h3 class="title is-3">Hola Admin</h3>
+            <div class="has-text-left container_User">
+                <figure class="image_User is-48x48">
+                    <img src="/images/usuario_icon.png">
+                </figure>
+                <span class="subtitle is-5">ADMIN</span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Configurar rol -->
+    <main>
+        <div class="columns">
+            <div class="column">
+                <a href="/admin/roles/admin">
+                    <button class="is-link boton_roles">
+                        <img src="/images/boton_Administrador.png" class="image_rol">
+                    </button>
+                </a>
+            </div>  
+            <div class="column">
+                <a href="/admin/roles/crm">
+                    <button class="is-link boton_roles">
+                        <img src="/images/boton_CRM.png" class="image_rol">
+                    </button>
+                </a>
+            </div>
+            <div class="column">
+                <a href="/admin/roles/analitico">
+                    <button class="is-link boton_roles" href="./roles_analticos.html">
+                        <img src="/images/boton_Analiticos.png" class="image_rol">
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<%- include('include/Foot_admin.ejs')%>

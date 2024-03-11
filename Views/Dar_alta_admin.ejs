@@ -1,0 +1,103 @@
+<%- include('include/Head_admin.ejs')%>
+
+<div class="column m-0">
+    <header>
+        <div class="box box_header">
+            <h3 class="title is-3">Dar de alta a usuarios</h3>
+            <div class="has-text-left container_User">
+                <figure class="image_User is-48x48">
+                    <img src="/images/usuario_icon.png">
+                </figure>
+                <span class="subtitle is-5">ADMIN</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <form>
+            <div class="columns">
+                <div class="column">
+                    <div class="mt-6">
+                        <label class="title is-4">Rol</label>
+                        <div>
+                            <div class="select">
+                                <select>
+                                    <option>Administrador</option>
+                                    <option>CRM</option>
+                                    <option>Usuario</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <label class="title is-4">Nombre</label>
+                        <div>
+                            <input class="input_usuarios" type="text" placeholder="Nombre">
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <label class="title is-4">Correo</label>
+                        <div>
+                            <input class="input_usuarios" type="email" placeholder="Correo">
+                        </div>
+                    </div>
+
+                    <div class="mt-6 content">
+                        <label class="title is-4"><strong>Lista de privilegios:</strong></label>      
+                        <ul>
+                            <li>
+                                XXXXXX
+                            </li>
+                            <li>
+                                XXXXXX
+                            </li>
+                            <li>
+                                XXXXXX
+                            </li>
+                            <li>
+                                XXXXXX
+                            </li>
+                            <li>
+                                XXXXXX
+                            </li>
+                            <li>
+                                XXXXXX
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="mt-6 ocultar">
+                        <label class="title is-4">Apellido</label>
+                        <div>
+                            <input class="input_usuarios" type="text" placeholder="Apellido">
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <label class="title is-4">Apellido</label>
+                        <div>
+                            <input class="input_usuarios" type="text" placeholder="Apellido">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <label class="title is-4">Contraseña</label>
+                        <div>
+                            <input class="input_usuarios" type="text" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="container_boton_dar_alta_usuario">
+                        <button class="is-link boton_dar_alta_usuario">Guardar</button>
+                        <button class="is-link is-light boton_dar_alta_usuario">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main> 
+</div>
+
+<%- include('include/Foot_admin.ejs')%>

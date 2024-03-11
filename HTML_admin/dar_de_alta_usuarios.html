@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/bulma.css">
+    <link rel="stylesheet" href="../Public/CSS/bulma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="./CSS/styles.css"/>
+    <link rel="stylesheet" href="../Public/CSS/styles.css"/>
     <title>CritiCraft</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="column is-2 p-0">
             <aside class="menu">
                 <figure class="logo">
-                    <img src="./images/logo_criticraft.png">
+                    <img src="../Public/images/logo_criticraft.png">
                 </figure>
                 <ul class="menu-list">
                     <li>
@@ -41,7 +41,7 @@
                             <span class="icon-text ml-3">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
-                                        <img src="./images/resenia_icon.png" alt="Review">
+                                        <img src="../Public/images/resenia_icon.png" alt="Review">
                                     </i>
                                 </span>
                                 Reseña
@@ -53,7 +53,7 @@
                             <span class="icon-text ml-3">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
-                                        <img src="./images/configurar_email_icon.png" alt="Review">
+                                        <img src="../Public/images/configurar_email_icon.png" alt="Review">
                                     </i>
                                 </span>
                                 Configurar email
@@ -87,7 +87,7 @@
                             <span class="icon-text ml-3">
                                 <span class="icon mr-2">
                                     <i class="fas fa-lg">
-                                        <img src="./images/roles_icon.png" alt="Roles">
+                                        <img src="../Public/images/roles_icon.png" alt="Roles">
                                     </i>
                                 </span>
                                 Roles
@@ -112,39 +112,101 @@
         <div class="column m-0">
             <header>
                 <div class="box box_header">
-                    <h3 class="title is-3">Configuración de E-mail</h3>
+                    <h3 class="title is-3">Dar de alta a usuarios</h3>
                     <div class="has-text-left container_User">
                         <figure class="image_User is-48x48">
-                            <img src="./images/usuario_icon.png">
+                            <img src="../Public/images/usuario_icon.png">
                         </figure>
                         <span class="subtitle is-5">ADMIN</span>
                     </div>
                 </div>
             </header>
-            
-            <!-- Configurar email -->
             <main>
-                <div class="columns">
-                    <div class="column columna_marca">
-                        <a href="./preguntas.html"><button  class="button is-large is-fullwidth button_brand">Luuna</button></a>
-                        <button  class="button is-large is-fullwidth button_brand">NOOZ</button>
-                        <button  class="button is-large is-fullwidth button_brand">MAPPA</button>
-                        <button  class="button is-large is-fullwidth button_brand">ergo</button>
-                        <button  class="button is-large is-fullwidth button_brand">nubed</button>
-                        <button  class="button is-large is-fullwidth button_brand">Homeware</button>
+                
+                <form>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="mt-6">
+                                <label class="title is-4">Rol</label>
+                                <div>
+                                    <div class="select">
+                                        <select>
+                                            <option>Administrador</option>
+                                            <option>CRM</option>
+                                            <option>Usuario</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label class="title is-4">Nombre</label>
+                                <div>
+                                    <input class="input_usuarios" type="text" placeholder="Nombre">
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <label class="title is-4">Correo</label>
+                                <div>
+                                    <input class="input_usuarios" type="email" placeholder="Correo">
+                                </div>
+                            </div>
+
+                            <div class="mt-6 content">
+                                <label class="title is-4"><strong>Lista de privilegios:</strong></label>      
+                                <ul>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                    <li>
+                                        XXXXXX
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="mt-6 ocultar">
+                                <label class="title is-4">Apellido</label>
+                                <div>
+                                    <input class="input_usuarios" type="text" placeholder="Apellido">
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <label class="title is-4">Apellido</label>
+                                <div>
+                                    <input class="input_usuarios" type="text" placeholder="Apellido">
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label class="title is-4">Contraseña</label>
+                                <div>
+                                    <input class="input_usuarios" type="text" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="container_boton_dar_alta_usuario">
+                                <button class="is-link boton_dar_alta_usuario">Guardar</button>
+                                <button class="is-link is-light boton_dar_alta_usuario">Cancelar</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="column columna_marca">
-                        <button  class="button is-large is-fullwidth button_brand">GRIT</button>
-                        <button  class="button is-large is-fullwidth button_brand">BRUGMANN</button>
-                        <button  class="button is-large is-fullwidth button_brand">Nativ</button>
-                        <button  class="button is-large is-fullwidth button_brand">charter</button>
-                        <button  class="button is-large is-fullwidth button_brand">Unfold</button>
-                    </div>
-                  </div>
-                  <button class="preguntas-main__button">
-                    <img class="preguntas-main__button" src="./images/boton.png" alt="Texto alternativo">
-                </button>
-            </main>
+                </form>
+            </main> 
         </div>
     </div>
 </body>

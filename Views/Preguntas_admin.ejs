@@ -1,0 +1,103 @@
+<%- include('include/Head_admin.ejs')%>
+
+<div class="column m-0">
+    <header>
+        <div class="box box_header">
+            <h3 class="title is-3">Crear encuesta</h3>
+            <div class="has-text-left container_User">
+                <figure class="image_User is-48x48">
+                    <img src="/images/usuario_icon.png">
+                </figure>
+                <span class="subtitle is-5">ADMIN</span>
+            </div>
+        </div>
+    </header>
+    
+    <main class="preguntas_main title is-5">
+        <div class="columns">
+            <div class="column">
+                <p class="nombre_marca">Nombre de la marca</p>
+                <p class="pregunta_title">Pregunta</p>
+                <div class="mt-6">
+                    <label class="title is-4 preguntas_main">Tipo: </label>
+                    <div class="select select_tipo_pregunta">
+                        <select class="select_tipo_pregunta">
+                            <option>Opcion Multiple</option>
+                            <option>Checkbox</option>
+                            <option>Pregunta de texto</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input preguntas_main_block" type="text" placeholder="Escribe la pregunta...">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <label class="title is-4 preguntas_main">Opciones: </label> <img src="/images/boton.png" alt="Agregar" class="preguntas_main_button">
+                    <div class="field">
+                        <div class="control">
+                            <br>
+                            <input class="input preguntas_main_block" type="text" placeholder="Text input">
+                        </div>
+                    </div>
+                    </label>
+                </div>
+                <br><br><br>
+                <div class="title is-4 mt-6">
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <p>Opcional:
+                                <label class="checkbox-resenias">
+                                    <input type="checkbox">
+                                </label>
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <button class="boton_preguntas_guardar">Guardar</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="colum columna barra_separacion"></div>
+            <div class="column">
+                <p class="nombre_marca">Número de días de delay: <input class="nombre_marca" type="number" value="14"></p>
+              <p class="formulario">Formulario</p> <br><br>
+              <section>
+                <div class="preguntas_main  title is-5">
+                    <p>1.XXXXXXXXXXXXXXXXXXXXXXX<span class="icono_preguntas"><i class="fas fa-edit fa-lg icono_preguntas"></i><i class="fas fa-trash fa-lg icono_preguntas"></i></span></p>
+                    <div class="mt-3">
+                    <input class="preguntas_main_text-input" type="text" name="">
+                    </div>
+                </div>
+                <div class="preguntas_main  title is-5">
+                    <p>2.XXXXXXXXXXXXXXXXXXXXXXX<span class="icono_preguntas"><i class="fas fa-edit fa-lg icono_preguntas"></i><i class="fas fa-trash fa-lg icono_preguntas"></i></span></p>
+                <div class="mt-3">
+                    <input type="radio" value="Opción_1" name="Radio_1">
+                    <label for="Opción_1">Opción 1</label><br>
+                    <input type="radio" value="Opción_2" name="Radio_1">
+                    <label for="Opción_2">Opción 2</label><br>
+                    <input type="radio" value="Opción_3" name="Radio_1">
+                    <label for="Opción_3">Opción 3</label><br>
+                </div>
+                </div>
+                <div class="preguntas_main title is-5">
+                    <p>3.XXXXXXXXXXXXXXXXXXXXXXX<span class="icono_preguntas"><i class="fas fa-edit fa-lg icono_preguntas"></i><i class="fas fa-trash fa-lg icono_preguntas"></i></span></p>
+                <div class="mt-3">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Opción 1</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">Opción 2</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3">Opción 3</label>
+                </div>
+                </div>
+            </section>
+            </div>
+          </div>
+    </main>
+</div>
+
+<%- include('include/Foot_admin.ejs')%>
