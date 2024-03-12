@@ -22,7 +22,7 @@ app.use(session({
 
 
 
-const admin = require("./Routes/admin.routes")
+const admin = require("./routes/admin.routes")
 
 app.use("/admin", admin)
 
@@ -31,4 +31,4 @@ app.use((requset, response, next) => {
     response.render("404")
 })
 
-app.listen(4000)
+app.listen(3000)

@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 
-const controller = require("../Controllers/admin.controller")
+const controller = require("../controllers/admin.controller")
 
 router.get("/configurar_email/preguntas", controller.get_preguntas)
 router.get("/configurar_email", controller.get_configurar_email)
