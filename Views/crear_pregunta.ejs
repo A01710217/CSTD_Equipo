@@ -1,0 +1,101 @@
+<%- include('include/Head_admin.ejs')%>
+
+<div class="column m-0">
+    <header>
+        <div class="box box_header">
+            <h3 class="title is-3">Crear encuesta</h3>
+            <div class="has-text-left container_User">
+                <figure class="image_User is-48x48">
+                    <img src="/images/usuario_icon.png">
+                </figure>
+                <span class="subtitle is-5">ADMIN</span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <p class="title mt-6">Crear pregunta</p>
+        <p class="subtitle mt-3">Tipo:</p>
+        <form action="/admin/configurar_email/crear-pregunta/<%= marca_id %>" method="POST">
+            <div class="container m-5">                
+                <div class="columns">
+                    <div class="column is-half">
+                        <!-- Texto de la pregunta -->
+                        <div class="field" for="pregunta_texto">
+                            <label class="label">
+                                <span class="subtitle">Pregunta:</span>
+                            </label>
+                            <div class="control">
+                                <input class="input preguntas_main_block" id="pregunta_texto" name="pregunta_texto" type="text" placeholder="Escribe la pregunta...">
+                            </div>
+                        </div>
+
+                        <!-- Tipo de pregunta -->
+                        <div class="field">
+                            <label class="label" for="pregunta_tipo">
+                                <span class="subtitle">Tipo:</span>
+                            </label>
+                            <div class="control">
+                              <div class="select">
+                                <select class="input preguntas_main_block" name="pregunta_tipo">
+                                    <% for (let tipo of tipos) { %>
+                                        <option><%= tipo.textotipo %></option>
+                                    <% } %>
+                                </select>
+                              </div>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta si es obligatoria -->
+                        <div class="mt-5 field">
+                            <label class="checkbox-resenias" for="pregunta_obligatoria">
+                                <span class="subtitle mt-3">Obligatoria:</span>
+                                <input type="checkbox" id="pregunta_obligatoria" name="pregunta_obligatoria" class="ml-2">
+                            </label>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <input class="mb-0 button boton_dar_alta_usuario elemento-fondo alinear-izquierda" type="submit" value="Guardar">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <a class="mb-0 button boton_dar_alta_usuario elemento-fondo alinear-derecha" href="/admin/configurar_email/preguntas/<%= marca_id %>">Cancelar</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="column is-half">
+                        <!-- Opciones de la pregunta -->
+                        <div class="columns">
+                            <div class="column is-3">
+                                <label class="label mt-3" for="pregunta_opcion">
+                                    <span class="subtitle">Opciones:</span>
+                                </label>
+                            </div>
+                            <div class="column">
+                                <button id="agregar_opcion" style="border: none;" type="button">
+                                    <img src="/images/boton.png" alt="Agregar" class="preguntas_main_button">
+                                </button>
+                            </div>
+                        </div>
+                        <div id="opciones_contenedor">
+                            <div class="field">
+                                <div class="control">
+                                  <input class="input mt-3 input preguntas_main_block" id="pregunta_opcion" name="pregunta_opcion" type="text" placeholder="Escribe la opción...">
+                                </div>
+                            </div>
+                        </div>
+                        <script src="/JS/script.js"></script>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</div>
+
+<%- include('include/Foot_admin.ejs')%>

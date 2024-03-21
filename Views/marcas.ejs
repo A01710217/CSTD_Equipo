@@ -1,0 +1,46 @@
+<%- include('include/Head_admin.ejs')%>
+
+<div class="column m-0">
+    <header>
+        <div class="box box_header">
+            <h3 class="title is-3">
+                <% if (configurar_email) { %>
+                    Configuración de E-mail
+                <% } else {%>
+                    Vista de E-mail
+                <% } %>
+            </h3>
+            <div class="has-text-left container_User">
+                <figure class="image_User is-48x48">
+                    <img src="/images/usuario_icon.png">
+                </figure>
+                <span class="subtitle is-5">ADMIN</span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Configurar email -->
+    <main>
+        <div class="columns">
+            <div class="column columna_marca">
+                <% for (let i = 0; i < marcas.length; i++) { %>
+                    <% if (i%2 == 0) { %>
+                        <a href="/admin/configurar_email/preguntas/<%= marcas[i].idmarca %>"><button class="button is-large is-fullwidth button_brand"><%= marcas[i].brand %></button></a>
+                    <% } %>
+                <% } %>
+            </div>
+            <div class="column columna_marca">
+                <% for (let i = 0; i < marcas.length; i++) { %>
+                    <% if (i%2 != 0) { %>
+                        <a href="/admin/configurar_email/preguntas/<%= marcas[i].idmarca %>"><button class="button is-large is-fullwidth button_brand"><%= marcas[i].brand %></button></a>
+                    <% } %>
+                <% } %>
+            </div>
+          </div>
+          <button class="preguntas-main__button">
+            <img class="preguntas-main__button" src="/images/boton.png" alt="Texto alternativo">
+        </button>
+    </main>
+</div>
+
+<%- include('include/Foot_admin.ejs')%>

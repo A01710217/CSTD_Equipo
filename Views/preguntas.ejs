@@ -1,0 +1,77 @@
+<%- include('include/Head_admin.ejs')%>
+
+<div class="column m-0">
+    <header>
+        <div class="box box_header">
+            <h3 class="title is-3">Configurar email</h3>
+            <div class="has-text-left container_User">
+                <figure class="image_User is-48x48">
+                    <img src="/images/usuario_icon.png">
+                </figure>
+                <span class="subtitle is-5">ADMIN</span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Configurar email -->
+    <main>
+        <!-- Recuadro Usuarios -->
+        <div class="is-max-widescreen">
+            <div class="box mt-6 container-usuarios content is-normal">
+                <article class="media">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Pregunta</th>
+                                <th>Tipo</th>
+                                <th>Obligatorio</th>
+                                <th>Opciones</th>
+                                <th class="is-one-fifth">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (let pregunta of preguntas) { %>
+                                <tr>
+                                    <td>
+                                        <p><%= pregunta.textopregunta %></p>
+                                    </td>
+                                    <td>
+                                        <p><%= pregunta.textotipo %></p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <% if (pregunta.statusobligatorio == 1) { %>
+                                                Si
+                                            <% } else { %>
+                                                No
+                                            <% } %>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <% for (let opcion of opciones) { %>
+                                                <% if (opcion.idpregunta == pregunta.idpregunta) { %>
+                                                    <li><%= opcion.textoopcion %></li>
+                                                <% } %>
+                                            <% } %>
+                                        </ul>
+                                    </td>
+                                    <td class="is-one-fifth">
+                                        <span class="icon is-right">
+                                            <i class="fas fa-edit fa-lg icono_preguntas mr-6"></i>
+                                            <i class="fas fa-trash fa-lg icono_preguntas"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </div>
+        
+        <a href="/admin/configurar_email/crear-pregunta/<%= marca_id %>" class="button boton_dar_alta_usuario">Crear pregunta</a>
+    </main>
+</div>
+
+<%- include('include/Foot_admin.ejs')%>

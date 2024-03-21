@@ -1,7 +1,7 @@
 /*Estilos para el menu*/
 aside {
     background-color: #61366e;
-    height: 120%;
+    height: 100vh;
     position: fixed; /*Fijar el pie de pagina en la parte inferior*/
     margin-top: 10px;
 }
@@ -22,8 +22,21 @@ aside {
     margin-right: 20px;
 }
 
-.logout {
-  margin-top: 250px;
+.elemento-fondo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.alinear-izquierda {
+    position: relative;
+    left: 0;
+}
+
+.alinear-derecha {
+    position: relative;
+    right: 0;
 }
 
 .box_header {
