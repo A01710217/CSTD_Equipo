@@ -85,11 +85,11 @@ exports.get_usuario = (request, response, next) => {
 }
 
 exports.get_dar_alta = (request, response, next) => {
-    response.render("preguntas")
+    response.render("Dar_alta_admin")
 }
 
 exports.get_roles = (request, response, next) => {
-    response.render("crear_pregunta")
+    response.render("Roles_admin")
 }
 
 exports.get_roles_admin = (request, response, next) => {
