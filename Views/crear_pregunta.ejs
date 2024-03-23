@@ -15,6 +15,12 @@
     
     <main>
         <p class="title mt-6">Crear pregunta</p>
+        <% if (error != "") { %>
+            <div class="notification is-danger">
+                <button class="delete"></button>
+                <%= error %>
+            </div>
+        <% } %>
         <p class="subtitle mt-3">Tipo:</p>
         <form action="/admin/configurar_email/crear-pregunta/<%= marca_id %>" method="POST">
             <div class="container m-5">                
@@ -26,7 +32,11 @@
                                 <span class="subtitle">Pregunta:</span>
                             </label>
                             <div class="control">
-                                <input class="input preguntas_main_block" id="pregunta_texto" name="pregunta_texto" type="text" placeholder="Escribe la pregunta...">
+                                <% if (usuario_input != {}) { %>
+                                    <input class="input preguntas_main_block" id="pregunta_texto" name="pregunta_texto" type="text" placeholder="Escribe la pregunta..." value="<%= usuario_input.pregunta_texto %>">
+                                <% } else { %>
+                                    <input class="input preguntas_main_block" id="pregunta_texto" name="pregunta_texto" type="text" placeholder="Escribe la pregunta...">
+                                <% } %>
                             </div>
                         </div>
 
@@ -84,11 +94,29 @@
                             </div>
                         </div>
                         <div id="opciones_contenedor">
-                            <div class="field">
-                                <div class="control">
-                                  <input class="input mt-3 input preguntas_main_block" id="pregunta_opcion" name="pregunta_opcion" type="text" placeholder="Escribe la opción...">
+                            <% if (usuario_input != {}) { %>
+                                <% if (Array.isArray(usuario_input.pregunta_opcion)) { %>
+                                    <% for (let opcion of usuario_input.pregunta_opcion) { %> 
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input mt-3 input preguntas_main_block" id="pregunta_opcion" name="pregunta_opcion" type="text" placeholder="Escribe la opción..." value="<%= opcion %>">
+                                            </div>
+                                        </div>
+                                    <% } %>
+                                <% } else { %>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input class="input mt-3 input preguntas_main_block" id="pregunta_opcion" name="pregunta_opcion" type="text" placeholder="Escribe la opción..." value="<%= usuario_input.pregunta_opcion %>">
+                                        </div>
+                                    </div>
+                                <% } %>
+                            <% } else { %>
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input mt-3 input preguntas_main_block" id="pregunta_opcion" name="pregunta_opcion" type="text" placeholder="Escribe la opción...">
+                                    </div>
                                 </div>
-                            </div>
+                            <% } %>
                         </div>
                         <script src="/JS/script.js"></script>
                     </div>
